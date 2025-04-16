@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
 # Get the database URL from the environment variable
-database_url = os.environ.get("FastAPI")
+database_url = os.environ.get("fastapi")
 
 if not database_url:
     raise ValueError("No DATABASE_URL found in environment variables.")
